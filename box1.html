@@ -1,0 +1,56 @@
+<html>
+    <style>
+
+.container{
+                    width:1000px;
+                    height:350px;
+                    border:1px solid black;
+                    margin:30px 50px 30px 30px ;}
+              
+    .box{
+        width: 250px;
+        height: 200px;
+        margin: 30px auto;
+        box-shadow: 0px 0px 10px 5px black;
+        border-radius: 10px 20px 30px 40px;
+        padding:20px;
+        float:left;
+        margin:20px 13px;
+    }
+        @media (max-width:815px)
+        {
+            .container{
+                 max-width:534px;
+                 height:600px;
+                      }
+            @media(max-width:550px)
+                    {.container{
+                        max-width:100%;
+                        height:auto;
+               
+                }} }
+              .container.box
+                {
+                    float:unset;
+                margin:25px auto;}
+               
+            .box
+                   {width:200px;
+                    height:200px;
+                    margin: 30px auto;
+                    border:1px solid black;
+                   box-shadow:0px 0px 10px 5px black;
+                   border-radius:10px 20px 30px 40px;  
+    
+                   }
+    </style>
+
+       <body> 
+        <div class="container">
+         <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    h2{
+        width:200PX ;
+        height: 50PX;
+        border: 1px solid black;
+        display: inline  ;
+    }
+    ul li{
+        width: 200px;
+        height: 40px;
+        border: 1px solid black;
+        display: inline-block;
+
+    }
+    a{
+        width: 150;
+        height:35px ;
+        border: 1px solid black;
+        display: block;
+    }
+    
+    .box{
+        width: 300;
+        height: 300;
+        margin: 35px;
+        box-shadow: 0px 0px 5px 0px;
+        display: inline;
+       
+    }
+    .container-fluid
+    {
+           width: 100%;
+        height: 500px;    
+        border: 1px solid red;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .container-fluid .box{
+        width: 380px;
+        height: 400px;
+          border: 0px 0px 5px 0px rgb(213, 17, 196);
+        }
+ 
+    .container{
+
+             max-width: 1320px;
+            height: 500px;
+            border: 1px solid rgb(68, 9, 139);
+            margin: 50px auto;
+        }   
+         .container .box{
+        width: 380px;
+        height: 400px;
+           border: 0px 0px 5px 0px rgb(199, 11, 11);
+           float:left;
+           margin:25px;
+    } 
+</style>
+
+<body>
+    <h2> HTML</h2>
+    <H2>CSS</H2>
+    <H2>JAVA SCRIPT</H2>
+    <ul>
+        <li>JAVASCRIPT</li>
+        <LI>REACT.JS</LI>
+        <Li>NODE.JS</Li>
+        <LI>MONGODB</LI>
+        <LI>REACT.ZS</LI>
+        <LI>BOOTSTRAP</LI>
+    </ul>
+
+    <a href="#">home</a>
+    <a href="#">back</a>
+    <a href="#">goto</a>
+    <a href="#">exit</a>
+   
+    
+
+    <div class="container-fluid">
+       
+        <div class="box"></div>
+       
+        <div class="box"></div>
+       
+        <div class="box"></div>
+    </div>
+
+    <div class="container">
+        <div class="box"></div>
+       
+        <div class="box"></div>
+       
+        <div class="box"></div>
+    </div>
+</body>
+</html>

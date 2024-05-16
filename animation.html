@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.box{
+    width: 350px ;
+    height: 350px ;
+    border: 1px solid black;
+    margin: auto;
+    float: left;
+}
+.abc{
+  
+  
+    float:left;
+    width: 250px ;
+    height: 200px;
+    border: 1px solid pink;
+    margin: auto;
+    float: left;
+}   
+
+.xyz{
+        margin: auto;
+        height: 300px;
+        width: 300px;
+        border: 1px solid brown;
+        float: left;
+}
+
+    .xyz1{
+        
+        transform:rotateX(0deg);
+        transition-property: transform;
+        transition-duration: 5s;            
+        }
+
+    .xyz1:hover{
+    transform: rotateX(360deg);    
+}
+    .xyz2{
+    
+    transform: rotate(0deg);
+    transition-property: transform;
+    transition-duration: 5s;
+}
+
+    .xyz2:hover{
+    transform:rotateY(360deg);    
+}
+.xyz3{
+    
+    transform: rotate(0deg);
+    transition-property: transform;
+    transition-duration: 5s;
+}
+
+    .xyz3:hover{
+    transform:rotate(360deg);    
+}
+
+</style>
+<body>
+    <div class="box" style=transform:translatex(50px)></div>
+    <div class="box" style=transform:translate(80px)></div>
+    <div class="box" style=transform:translateY(50px)></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+
+    <div class="abc" style="margin-left: 50px;"></div>
+    <div class="abc"></div>
+    <div class="abc" style="margin-top: 50px;"></div>
+  
+    <div class="xyz xyz1"></div>  
+    <div class="xyz xyz2"></div> 
+    <div class="xyz xyz3"></div> 
+    
+</body>
+</html>
