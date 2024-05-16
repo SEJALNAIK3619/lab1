@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+</head>
+<body>
+    <script>
+        //function
+        function myfunc(name,age,email,phone,course){
+            document.write("<h3> my name is"+ name+ "</h3");
+                document.write("<hr>");
+            document.write("<h3>my age is "+age+ "</h3");
+                document.write("<hr>");
+            document.write("<h3> my email id is "+email+ "</h3");
+                document.write("<hr>");
+            document.write("<h3> my contact no is"+phone+ "</h3");
+                document.write("<hr>");
+                document.write("<h3> my course is  "+course+ "</h3");
+         
+            }
+            //return function
+            document.write("<hr>");
+            function abc(){
+                return "hhhhhhhh";
+                //document.write("hello");
+            }
+            
+            abc();
+            var a = abc();
+            document.write(abc());
+            document.write("<hr>");
+            function def(){
+                document.write("hello"); 
+                    return 25;
+                           
+            }
+            //return evenandodd
+            var b=25+ def();
+            document.write(b);
+            function sum(x,y) {
+                return x+y;
+              }
+              document.write("<hr>");
+              var c=sum(5,8);
+              document.write(c);
+              document.write("<hr>");
+function evenandodd(){
+var number=85;
+if(number % 2== 0)
+{
+    document.write(number+"this number is even number");
+
+}
+else if(number % 2 != 0){
+    document.write(number+"this is odd number");
+}else{
+    document.write(number+"this number is neither even nor odd");
+} 
+
+}
+  evenandodd();
+  myfunc("sejal",43,"sejalnaik16@gmail.com",9978824884,"full stack dev");
+  document.write("<hr>");
+  document.write("<hr>");
+  myfunc("dev",19,"ff@gmail.com",8987547898,"web dev");
+  document.write("<hr>");
+
+</script>
+</body>
+</html>
