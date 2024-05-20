@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//         var data=[
+//     {
+//         name:"Raj",
+//         age:25,
+//         course:"web devlopment"
+
+//     },
+//     {
+//         name:"rahul",       
+//         age:28,
+//         course:"web development"
+//     },
+    
+
+//     {
+//         name:"kishan",       
+//         age:24,
+//         course:"App development"
+//     },
+    
+// {
+//     name:"rajesh",       
+//         age:26,
+//         course:"App and web development"
+// },
+// {
+//         name:"jay",       
+//         age:23,
+//         course:"web development"
+//     }
+
+// ];
+
+//         data.map((value,index)=>{
+//             document.write("<h3>"+ index+")"+value.name+","+value.age+","+value.course+"</h3>");
+//         });
+
+//         const xyz=()=>{
+//             document.write("Arrow Function");
+            
+//         }
+//         xyz();
+//         document.write("<hr>");
+
+//         const abc=()=>{
+//                 return "Arrow function";
+//         }
+//         document.write(abc());
+        //some method
+        var ages=[12,15,14,19,28,25,24,29,11,16];
+        var some=ages.some(abc);
+        var every=ages.every(abc);
+        var find=ages.find(abc);
+        var filter=ages.filter(abc);
+
+        var findIndex=ages.findIndex(abc);
+        document.write("Every="+every+"<br>");
+        document.write("some="+some+"<br>");
+        document.write("find="+find+"<br>");
+
+        document.write("findindex="+findIndex+"<br>");
+        document.write("filter"+filter+"<br>");
+        function abc(age){
+        return age>18;
+        };
+
+        var arr=["raj","parth","jay","parth","Jay","kishan","jayesh","yug","bhavin","raj","jay","parth","arpit"];
+                document.write(arr+"<br>");
+                var a=arr.reduce((acc,item)=>{
+                    console.log(acc,item);
+                    if(!acc.includes(item)){
+                        acc.push(item);
+                    }
+                        return acc;
+                },[]);
+                document.write(a);
+
+
+
+
+    </script>
+    
+</body>
+</html>
