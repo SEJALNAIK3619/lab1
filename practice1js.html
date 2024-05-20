@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var arr=[
+    {
+        name:"Raj",
+        age:25,
+        course:"web devlopment"
+
+    },
+    {
+        name:"Parth",       
+        age:28,
+        course:"web development"
+    },
+    
+
+    {
+        name:"Raj",       
+        age:24,
+        course:"App development"
+    },
+    
+{
+    name:"John",       
+        age:26,
+        course:"App and web development"
+},
+{
+        name:"Raj",       
+        age:23,
+        course:"web development"
+    },
+];
+
+var data=[];
+arr.map((value,index)=>{
+document.write("<h3>"+index+")"+ value.name+","+ value.age+","+value.course+","+"</h3>");
+});
+
+arr.reduce((acc,value)=>
+{
+console.log(acc,value);
+if(!acc.includes(value.name)){
+    acc.push(value.name);
+    data.push({
+        name: value.name,
+        age: value.age,
+        course: value.course
+    })
+    document.write(value.name);
+}
+return acc;
+
+},[]);
+
+data.map((value,index)=>{
+document.write("<h3>"+index+")"+ value.name+","+ value.age+","+value.course+","+"</h3>");
+});
+    </script>
+</body>
+</html>
