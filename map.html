@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java script</title>
+</head>
+<body>
+    <h2 align="center">Map Method</h2>
+    <script>
+var data=[
+    {
+        name:"Raj",
+        age:25,
+        course:"web devlopment"
+
+    },
+    {
+        name:"rahul",       
+        age:28,
+        course:"web development"
+    },
+    
+
+    {
+        name:"kishan",       
+        age:24,
+        course:"App development"
+    },
+    
+{
+    name:"rajesh",       
+        age:26,
+        course:"App and web development"
+},
+{
+        name:"jay",       
+        age:23,
+        course:"web development"
+    }
+
+];
+
+       console.log(data);
+       data.map(abc);
+       function abc(value,index)
+       {
+        document.write("<h3>"+index+")"+value.name+","+value.age+","+value.course+"</3>");
+        }
+// through this it is lengthy
+        document.write("<hr>");
+    //    document.write("<h3>"+data[0].name+","+data[0].age+","+data[0].course+","+"</h3>");
+    //    document.write("<h3>"+data[1].name+","+data[1].age+","+data[1].course+","+"</h3>");
+    //    document.write("<h3>"+data[2].name+","+data[2].age+","+data[2].course+","+"</h3>");
+    //    document.write("<h3>"+data[3].name+","+data[3].age+","+data[3].course+","+"</h3>");
+    //    document.write("<h3>"+data[4].name+","+data[4].age+","+data[4].course+","+"</h3>");
+    //     var data=["HTML",52,true,{name:"Raj"}];
+    //     document.write(data);
+    //     document.write("<hr>");
+    //   document.write(data[3].name);
+    </script>
+</body>
+</html>
