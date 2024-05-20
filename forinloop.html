@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var obj={
+name:"raj",
+age:25,
+Course:"web dev",
+email: "raj123@gmail.com",
+phone:1234567892
+
+        };
+        console.log(obj);
+        document.write(obj.name);
+
+        for (var key in obj){
+
+            document.write("<h3>"+ key+"="+obj[key]+"</h3>");
+        }
+
+
+        var data=new Object();
+      
+        data.name="parth";
+        data.age=23;
+        data.Course="web devlopement";
+
+        console.log("java script");
+        var number=85;
+        if(number%2==0){
+                document.write(number+"this is even number");
+
+        }else if(number%2!=0){
+            document.write(number+"this is odd number");
+
+        }
+data.email="abc@gmail.com";
+console.log(data);
+    </script>
+</body>
+</html>
