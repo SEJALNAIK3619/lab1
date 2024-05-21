@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> </title>
+</head>
+<body>
+    <h2 align="center">Javascript</h2>
+    <script>
+   var store = [
+            {buynowData : [
+                {
+                    product_name: "Office chair",
+                    product_category: "furniture",
+                    product_price: 900.00,
+                    product_image: "https://websyinfotech.com/Orphnage/images/office-chair.jpg" 
+                },
+                {
+                    product_name: "TV Unit",
+                    product_category: "furniture",
+                    product_price: 1000.00,
+                    product_image: "https://websyinfotech.com/Orphnage/images/tv unit.jpg"
+                },
+                {
+                    product_name: "Solar Light",
+                    product_category: "garden_outdoor",
+                    product_price: 500.00,
+                    product_image: "https://websyinfotech.com/Orphnage/images/solar light.jpg"
+                }
+            ]
+            
+            },
+            {cartData : [
+                {
+                    product_name: "Office chair",
+                    product_category: "furniture",
+                    product_price: 900.00,
+                    product_image: "https://websyinfotech.com/Orphnage/images/office-chair.jpg" 
+                },
+                {
+                    product_name: "TV Unit",
+                    product_category: "furniture",
+                    product_price: 1000.00,
+                    product_image: "https://websyinfotech.com/Orphnage/images/tv unit.jpg"
+                },
+                {
+                    product_name: "Solar Light",
+                    product_category: "garden_outdoor",
+                    product_price: 500.00,
+                    product_image: "https://websyinfotech.com/Orphnage/images/solar light.jpg"
+                },
+                {
+                    product_name: "Office chair",
+                    product_category: "furniture",
+                    product_price: 900.00,
+                    product_image: "https://websyinfotech.com/Orphnage/images/office-chair.jpg" 
+                },
+                {
+                    product_name: "Office chair",
+                    product_category: "furniture",
+                    product_price: 900.00,
+                    product_image: "https://websyinfotech.com/Orphnage/images/office-chair.jpg" 
+                },
+                {
+                    product_name: "Office chair",
+                    product_category: "furniture",
+                    product_price: 900.00,
+                    product_image: "https://websyinfotech.com/Orphnage/images/office-chair.jpg" 
+                },
+                {
+                    product_name: "TV Unit",
+                    product_category: "furniture",
+                    product_price: 1000.00,
+                    product_image: "https://websyinfotech.com/Orphnage/images/tv unit.jpg"
+                },
+                {
+                    product_name: "TV Unit",
+                    product_category: "furniture",
+                    product_price: 1000.00,
+                    product_image: "https://websyinfotech.com/Orphnage/images/tv unit.jpg"
+                },
+                {
+                    product_name: "TV Unit",
+                    product_category: "furniture",
+                    product_price: 1000.00,
+                    product_image: "https://websyinfotech.com/Orphnage/images/tv unit.jpg"
+                },
+                {
+                    product_name: "Solar Light",
+                    product_category: "garden_outdoor",
+                    product_price: 500.00,
+                    product_image: "https://websyinfotech.com/Orphnage/images/solar light.jpg"
+                },
+                {
+                    product_name: "Solar Light",
+                    product_category: "garden_outdoor",
+                    product_price: 500.00,
+                    product_image: "https://websyinfotech.com/Orphnage/images/solar light.jpg"
+                },
+                {
+                    product_name: "Solar Light",
+                    product_category: "garden_outdoor",
+                    product_price: 500.00,
+                    product_image: "https://websyinfotech.com/Orphnage/images/solar light.jpg"
+                },
+                {
+                    product_name: "Office chair",
+                    product_category: "furniture",
+                    product_price: 900.00,
+                    product_image: "https://websyinfotech.com/Orphnage/images/office-chair.jpg" 
+                },
+                {
+                    product_name: "Office chair",
+                    product_category: "furniture",
+                    product_price: 900.00,
+                    product_image: "https://websyinfotech.com/Orphnage/images/office-chair.jpg" 
+                },
+                {
+                    product_name: "TV Unit",
+                    product_category: "furniture",
+                    product_price: 1000.00,
+                    product_image: "https://websyinfotech.com/Orphnage/images/tv unit.jpg"
+                },
+                {
+                    product_name: "TV Unit",
+                    product_category: "furniture",
+                    product_price: 1000.00,
+                    product_image: "https://websyinfotech.com/Orphnage/images/tv unit.jpg"
+                }
+
+            ]
+            
+            },
+            {likeData : [
+                {
+                    product_name: "Coffee mug",
+                    product_category: "kitchen_dining",
+                    product_price: 800.00,
+                    product_image: "https://websyinfotech.com/Orphnage/images/coffee mug.jpg"
+                },
+                {
+                    product_name: "Water bottle borosic",
+                    product_category: "kitchen_dining",
+                    product_price: 2000.00,
+                    product_image: "https://websyinfotech.com/Orphnage/images/water bottle.webp"
+                }
+            ]
+            
+            }
+        ];
+        document.write("<h3>BuyNow Data</h3>");
+        store[0].buynowData.map((value)=>{
+            document.write(`<img src='${value.product_image}' width='200'>`);
+            document.write("<h5>" + value.product_name + "</h5>");
+            document.write("<h5>" + value.product_price + "</h5>");
+        })
+
+        document.write("<h3>Cart Data</h3>");
+        store[1].cartData.map((value)=>{
+            document.write(`<img src='${value.product_image}' width='200'>`);
+            document.write("<h5>" + value.product_name + "</h5>");
+            document.write("<h5>" + value.product_price + "</h5>");
+        })
+
+        document.write("<h3>Like Data</h3>");
+        store[2].likeData.map((value)=>{
+            document.write(`<img src='${value.product_image}' width='200'>`);
+            document.write("<h5>" + value.product_name + "</h5>");
+            document.write("<h5>" + value.product_price + "</h5>");
+        })
+        </script>
+
+</body>
+</html>
