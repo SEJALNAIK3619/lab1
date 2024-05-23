@@ -1,0 +1,22 @@
+export default function Home(){
+    var name = "React JS";
+    function abc(){
+        alert("Node Js")
+    }
+    function xyz(){
+        return(
+            <div>
+                <h3>Node Js</h3>
+            </div>
+        );
+    }
+    return(
+        <>
+            <h3>Home Component</h3>
+            <h3>{name}</h3>
+            {xyz()}
+            <button onClick={abc}>Click Me</button>
+
+        </>
+    );
+}
