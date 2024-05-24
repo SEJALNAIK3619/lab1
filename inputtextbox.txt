@@ -1,0 +1,11 @@
+mport React,{ useState } from "react";
+export default function UseState(){
+    var [input,setinput] = useState("");
+    console.log("input = ",input);
+    return(
+        <>
+            <h3>useState</h3>
+            <input type="text" onChange={(e)=>setinput(e.target.value)}/>
+        </>
+    );
+}
