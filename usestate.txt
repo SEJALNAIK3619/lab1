@@ -1,0 +1,21 @@
+import { useState } from "react";
+
+export default function Usestate(){
+
+    var[name,setname]=useState("web devlopment");
+        var[count,setcount]=useState(1);
+    return(
+        <>
+        <h3>
+            Usestate
+        </h3>
+        <p>
+            {name}
+        </p>
+        <button onClick={()=>setname("App Development")}>Update name 1</button>
+        <button onClick={()=>setname("HTML")}>Update name 2</button>
+        <h1>count={count}</h1>
+        <button onClick={()=>setcount(count+1)}>Update count</button>
+        </>
+    )
+}
