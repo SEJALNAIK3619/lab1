@@ -1,0 +1,21 @@
+export default function Footer(){
+    var arr = ["HTML","CSS","Bootstrap 5","JavaScript","React Js","Node Js","MongoDB"];
+    for(var a = 0; a < arr.length; a++){
+        console.log(arr[a]);
+    }
+    return(
+        <>
+            <h3>Footer Component</h3>
+            {
+                arr.map((value)=>{
+                    
+                    return(
+                        <>
+                            <h3>{value}</h3>
+                        </>
+                    );
+                })
+            }
+        </>
+    );
+}

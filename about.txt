@@ -1,0 +1,13 @@
+export  default function About(){
+   
+return(
+    <>
+    <div classname="container"> 
+    <div classname="box"></div>
+    <div classname="box"></div>
+    <div classname="box"></div>
+    </div>
+    
+    </>
+);
+}
