@@ -1,0 +1,19 @@
+//add <Hook/> in app.js
+
+import { useEffect, useState } from "react";
+
+export default function Hook(){
+    var[name,setname]=useState("React JS");
+    var[count,setcount]=useState(1);
+    useEffect(()=>{
+        console.log("useEffect called");
+    },[name])
+    return(
+        <>
+            <h2 align="center">Hook</h2>
+            <h3>Name = {name} Count = {count}</h3>
+            <button onClick={()=>setname("Node JS")}>Update Name</button>
+            <button onClick={()=>setcount(count + 1)}>Update Count +</button>
+        </>
+    );
+}
